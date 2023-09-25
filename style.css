@@ -1,0 +1,93 @@
+:root{
+     --bg-principal: linear-gradient(180deg, #063b7a 0%, #041832 48.44%, #01080E 100%); 
+       /* --bg-principal: blue; */
+}
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    background: var(--bg-principal);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+.card-cadastro-tabela{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tabela-alunos{
+    color: white;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+#tabela-cadastro{
+    display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+label{
+    margin-left: 1.5rem;
+    font-size: 18px;
+}
+
+td, th {
+    border: 1px solid #f7f7f7; 
+    padding: 1rem;
+    text-align: left;
+}
+
+input{
+    color: aliceblue;
+    background-color: #022a5c;
+    border: 1px rgba(138, 178, 242, 0.4) solid;
+    padding: 0.3rem;
+}
+input:focus{
+    outline: none;
+}
+
+button{
+    padding: 1rem 1.4rem;
+    border-radius: 0.3rem;
+    background-color: #022a5c;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#083c7a ;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      padding: 0.5rem;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    td,
+    th {
+      padding: 0.6rem;
+    }
+  
+    input,
+    button {
+      padding: 0.5rem 0.8rem;
+    }
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunoas</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans:wght@400;500&family=Quicksand:wght@300&family=Roboto:wght@300;400;700&family=Unbounded:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="card-cadastro-tabela">
+            <h1>Cadastro de Alunos</h1>
+            <table class="tabela-alunos" id="tabela-cadastro">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matricula</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card-formulario-aluno">
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                    
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" id="matricula">
+
+                    <label for="nota-um">Nota 01:</label>
+                    <input type="number" id="nota-um" min="0" max="10">
+    
+                    <label for="nota-dois">Nota 02:</label>
+                    <input type="number" id="nota-dois" min="0" max="10">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
